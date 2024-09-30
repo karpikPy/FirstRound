@@ -19,11 +19,11 @@ def conversion():
 
     if input_dst in conversions:
         converted_dst = conversions[input_dst]
-        if input_dst in ["mile", "miles"]:
+        if input_dst in ["mile", "miles"]: # since feet to miles gives idiotic number it get it's own if to round it up
             rounded_up = round(converted_dst, 2)
             print(feet, "feet is equal to", rounded_up, input_dst)
         elif input_dst in ["foot", "feet"]:
-            print("NO WAY", feet, "FEET IS EQUAL TO", converted_dst, input_dst)
+            print("NO WAY", feet, "FEET IS EQUAL TO", converted_dst, input_dst) # just a little joke from me, don't really think I should explain it
             print("wow, who would've guessed?")
         else:
             print(feet, "feet is equal to", converted_dst, input_dst)
