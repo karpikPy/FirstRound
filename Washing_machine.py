@@ -1,6 +1,6 @@
 import time  # This is for delay
 
-def washing_messages(seconds): #half of these messages are from ChatGPT
+def washing_messages(seconds):
     messages = [
         "Still washing...",
         "You guessed it, still washing...",
@@ -31,11 +31,11 @@ def washing_messages(seconds): #half of these messages are from ChatGPT
 # Program starts here
 print("Washing machine simulator", end="\n\n")
 
-clothes = input("Write what clothes you want to wash, dividing with spacebar: ").split()
+clothes = str(input("Write what clothes you want to wash, dividing with spacebar: ").split())
 length_clothes = len(clothes)
 
 washing_modes = {
-    "1": ("Normal/Cotton", [40, 50, 60]),  # these numbers are just minutes, depending on the amount of clothes I wash
+    "1": ("Normal/Cotton", [40, 50, 60]),  # these numbers are just minutes, depending on the amount of clothes the user washes
     "2": ("Delicate/Gentle", [30, 40, 50]), #names of the modes and time are from ChatGPT
     "3": ("Heavy Duty", [60, 75, 90]),
     "4": ("Quick Wash", [10, 20, 30]),
