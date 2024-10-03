@@ -26,6 +26,6 @@ def conversion():
         else:
             print(feet, "feet is equal to", converted_dst, input_dst)
     else:
-        print("Mistake. Skill issue from your side not gonna lie")
+        print("Mistake. Skill issue from your side not gonna lie. Input one of given values.")
 
 conversion()
